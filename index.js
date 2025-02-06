@@ -1,17 +1,15 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-require("dotenv").config();
 const port = process.env.PORT || 3000;
 
-
-
+require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("boss in city");
+  res.send("Developer Project Server is ready...");
 });
 
 app.listen(port, () => {

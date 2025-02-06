@@ -9,9 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Developer Project Server is ready...");
+  res.send("Subro Selon Server is ready...");
 });
 
 app.listen(port, () => {
-  console.log(`bistro boss in the city in dhaka ${port}`);
+  console.log(`subro selon server is situated in dhaka ${port}`);
 });
